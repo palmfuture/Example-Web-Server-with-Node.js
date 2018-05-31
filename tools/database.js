@@ -16,6 +16,8 @@ const sequelize = new Sequelize(config.TABLE, config.USERNAME, config.PASSWORD, 
     operatorsAliases: false
 });
 
+sequelize.sync({ force: true });
+
 let op = Sequelize.Op;
 let model = {};
 

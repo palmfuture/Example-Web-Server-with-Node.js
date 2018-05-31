@@ -41,3 +41,4 @@ typings/
 .env
 
 .DS_Store
+config.js
