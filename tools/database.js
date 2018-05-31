@@ -29,5 +29,12 @@ model.op = op;
     Models
 */
 model.users = require('../models/User')(sequelize, Sequelize);
+model.products = require('../models/Products')(sequelize, Sequelize);
+
+/*
+    Associations
+*/
+model.users.hasMany(model.products);
+model.products.belongsTo(model.users);
 
 module.exports = model;

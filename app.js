@@ -14,5 +14,6 @@ app.use(compression());
 const routes = require('./routes');
 
 routes.UserRoute(app);
+routes.AuthenRoute(app);
 
 module.exports = app;
